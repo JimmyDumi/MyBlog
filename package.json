@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "dist": "gh-pages -d dist -b dist"
   },
+  "homepage": "https://jimmydumi.github.io/MyBlog/",
   "keywords": [],
   "author": "",
   "license": "ISC",
