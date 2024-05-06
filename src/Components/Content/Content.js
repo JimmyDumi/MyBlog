@@ -12,10 +12,33 @@ const ContentDiv = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
+function ThreeJS() {
+  return (
+    <>
+      <div>ThreeJS Getting Started</div>
+      <div style={{ margin: "0 auto", maxWidth: "800px", padding: "20px" }}>
+        <iframe
+          title="Embedded External Homepage"
+          src="https://jimmydumi.github.io/ThreeJS-TypeScript-BoilerPlate/" // Replace with the URL of the external homepage
+          style={{
+            width: "100%",
+            height: "600px",
+            border: "1px solid black",
+            borderRadius: "8px",
+          }}
+          allowFullScreen
+        ></iframe>
+      </div>
+    </>
+  );
+}
+
 function Content() {
   return (
     <>
-      <ContentDiv>This is My First Contents</ContentDiv>
+      <ContentDiv>
+        <ThreeJS />
+      </ContentDiv>
     </>
   );
 }
