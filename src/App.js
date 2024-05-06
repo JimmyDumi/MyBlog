@@ -1,9 +1,14 @@
 import React from "react";
 import "./App.css";
+import Header from "./Components/Header/Header.js";
+import Content from "./Components/Content/Content.js";
 
 const App = () => {
   return (
-    <div className="container">Hello, GitHub!!. This is my Last Dist!!!!</div>
+    <>
+      <Header />
+      <Content />
+    </>
   );
 };
 

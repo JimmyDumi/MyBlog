@@ -11,10 +11,6 @@ module.exports = {
     filename: "[hash].js",
   },
 
-  resolve: {
-    extensions: [".js", ".jsx", ".css"],
-  },
-
   module: {
     rules: [
       {
@@ -32,6 +28,21 @@ module.exports = {
             loader: "css-loader",
           },
         ],
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "images/[name].[ext]?[hash]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack", "url-loader"],
       },
     ],
   },
